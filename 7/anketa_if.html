@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Моя первая страница</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+       	var Name = prompt("Ваше имя?", "Пожалуйста введите имя");
+        var middleName = prompt("Ваше отчество?", "здесь введите Ваше отчество");
+        var surName = prompt("Ваша фамилия?", "здесь введите Вашу фамилию");
+
+        var years = prompt("Сколько Вам полных лет?", "здесь введите сколько вам полных лет");
+       
+        
+        var genderK = confirm("Ваш пол - мужской?"); 
+        var genderJ; 
+        var pension; 
+        if (genderK == true) {
+            genderJ = "мужской";
+            if (years >= 20) {
+                pension = "да";
+            }
+            else {
+                pension = "нет";
+            }
+        }
+        else {
+            genderJ = "женский";
+            if (years >= 25) {
+                pension = "да";
+            }
+            else {
+                pension = "нет";
+            }
+        }
+
+        alert("Ваше ФИО: " + middleName + " " + Name + " " + surName + "\n Ваш пол: " + genderJ + "\n Ваш возраст, лет: " + years + "\n Ваш возраст, дни: " + (parseInt(years/4)*366 + (years - parseInt(years/4))*365) + "\n Через 5 лет Вам будет: " + (parseInt(years) + 5) + "\n Вы пенсионер: " + pension);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+

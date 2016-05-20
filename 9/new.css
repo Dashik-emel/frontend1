@@ -1,0 +1,55 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.content {
+	margin: 0 auto;
+	width: 90%;
+	height: 600px;
+	
+}
+.first,.second,.third{
+	float: left;
+	margin: 5px 10px; 
+	width: 220px;
+	height: 220px;
+	text-align: center;
+	position: relative;
+}
+
+.fourth{
+	clear: left;
+	float: left;
+	margin: 5px 10px; 
+	width: 220px;
+	height: 220px;
+	text-align: center;
+}
+.fifth,.six{
+	float: left;
+	margin: 5px 10px; 
+	width: 220px;
+	height: 220px;
+	text-align: center;
+}
+.rh{
+	position: relative;
+	bottom: 190px
+}
+
+.th{
+	position: relative;
+	bottom: 65px;
+	left: 60px;
+}
+.grammi{
+	position: relative;
+	bottom: 82px;
+	left: 18px;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: lightgreen;
+	width: 40px;
+}

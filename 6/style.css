@@ -1,0 +1,91 @@
+
+table.CHESS td{
+   width:60px; height:60px;
+
+}
+
+table.CHESS tr:nth-child(2) td:nth-child(6)
+{
+    background: url('chess.png') no-repeat 15px 8px;
+    width: 40px;
+    height: 44px;
+}
+
+table.CHESS tr:nth-child(2) td:nth-child(5)
+{
+    background: url("chess.png") no-repeat -45px 8px;
+    width: 46px;
+    height: 43px;
+ }
+.ladjaR
+
+{
+    background: url('chess.png') no-repeat -98px 8px;
+    width: 34px;
+    height: 39px;
+}
+.slonR {
+    background: url('chess.png') no-repeat -150px 8px;
+    width: 43px;
+    height: 46px;
+}
+.konR {
+    background: url('chess-rw.png') no-repeat -205px 8px;
+    width: 40px;
+    height: 39px;
+}
+.peshkaR {
+    background: url('chess-rw.png') no-repeat -257px 8px;
+    width: 29px; height: 39px;
+}
+.kingW
+{
+    background: url('chess-rw.png') no-repeat 10px -47px;
+    width: 41px;
+    height: 44px;
+}
+
+.ferzW
+{
+    background: url('chess-rw.png') no-repeat -43px -45px;
+    width: 46px;
+    height: 43px;
+}
+.ladjaW
+{
+    background: url('chess-rw.png') no-repeat -98px -45px;
+    width: 34px;
+    height: 39px;
+}
+.slonW {
+    background: url('chess-rw.png') no-repeat -150px -45px;
+    width: 43px;
+    height: 46px;
+}
+.konW {
+    background: url('chess-rw.png') no-repeat -205px -45px;
+    width: 40px;
+    height: 40px;
+}
+.peshkaW {
+    background: url('chess-rw.png') no-repeat -258px -45px;
+    width: 29px;
+    height: 39px;
+}
+
+/*раскраска клеток и обрезание краев*/
+
+table.CHESS tr:nth-child(even) td:nth-child(odd),
+table.CHESS tr:nth-child(odd) td:nth-child(even){
+    background-color: black;
+}
+table.CHESS td:first-child,
+table.CHESS td:last-child{
+    background-color: lightgreen !important;
+    width:25px;
+}
+table.CHESS tr:first-child *,
+table.CHESS tr:last-child *{
+    background-color: lightgreen !important;
+    height:25px;
+}

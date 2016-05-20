@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Блюда</title>
+    <meta charset=utf-8>
+    <link rel="stylesheet" href="new.css" type="text/css">
+    <style>
+       body{ font: normal 100% Arial, serif;}
+       h1{  font-size: 1.5em;/*24px/16px*/ }
+       
+       .clear,.container{
+           text-align: center; 
+       }
+       p  {margin:5px 5px;}
+       img  {max-width: 95%;}
+       .zena {float:left; margin: 5px 0 5px 5px; background-color: lightgreen;
+        position: relative; top: -42px; right: -5px; opacity: 0.8;
+       }
+       .weight {float:right; margin: 5px 5px 5px 0; background-color: lightgreen;
+         position: relative; top: -42px; right: 5px; opacity: 0.8;
+       }
+       .clear{clear: both;}
+       
+       @media screen and (min-width:400px){
+           h1{
+               font-size:1em;
+               height: 3em;
+           }
+           .kuriza1,.kuriza2,.kuriza3{
+               float:left;
+               width: 32.7%;
+           }
+           .kuriza4,.kuriza5,.kuriza6{
+               float:left;
+               width: 32.7%;
+           }
+            .zena,.weight {margin: 2px; float: none;}
+            .zena {position: relative; top: 0; right: 0; opacity: 1;}
+            .weight {position: relative; top: 0; right: 0; opacity: 1;}
+       }
+      
+       
+    </style>
+    
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="kuriza1">
+        <h1>Рыба</h1>
+        <img src="fish.png">
+        <div class="zena"><p>1000р.</p></div>
+        <div class="weight"><p>600гр.</p></div>
+        </div>
+        
+        <div class="kuriza2">
+        <h1>Курица</h1>
+        <img src="Ebi_furai.png">
+        <div class="zena"><p>1000р.</p></div>
+        <div class="weight"><p>600гр.</p></div>
+        </div>
+        <div class="kuriza3">
+        <h1>Рыба</h1>
+        <img src="fish.png">
+        <div class="zena"><p>1000р.</p></div>
+        <div class="weight"><p>600гр.</p></div>
+        </div>
+        
+        <div class="kuriza4">
+        <h1>Курица</h1>
+        <img src="Ebi_furai.png">
+        <div class="zena"><p>1000р.</p></div>
+        <div class="weight"><p>600гр.</p></div>
+        </div>
+        <div class="kuriza5">
+        <h1>Рыба</h1>
+        <img src="fish.png">
+        <div class="zena"><p>1000р.</p></div>
+        <div class="weight"><p>600гр.</p></div>
+        </div>
+        
+        <div class="kuriza6">
+        <h1>Курица</h1>
+        <img src="Ebi_furai.png">
+        <div class="zena"><p>1000р.</p></div>
+        <div class="weight"><p>600гр.</p></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

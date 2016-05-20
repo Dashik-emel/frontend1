@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style>
+            #wrapper{
+                min-width: 250px;
+                padding: 0;
+            }
+            content {display: flex;}
+            
+            nav{
+                background-color: #F8F094;
+                padding: 0 15px;
+                flex:1 1 150px;
+            }
+            article {
+                background: #ffffff url('uy.png') repeat-y right;
+                flex:9 1 150px;
+                padding: 0 15px; 
+}
+            header, footer{
+                background-color: #add8e6;
+                text-align: center;
+                text-transform: uppercase;
+                line-height: 3;
+                color: blue;
+            }
+            @media screen and (max-width:400px){
+    
+                header, footer {
+                    display: none;
+                }
+                article{
+                    background: transparent;
+                }
+                 nav, content {
+                background-color: #ffffff;
+                flex-direction: column-reverse;
+                    }
+              ul {
+                   list-style-type: none;
+                   margin: 0px 10px 20px 10px;
+                   padding: 0;
+               }
+               li{
+                   display: inline; 
+               }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                Привет участникам соревнований!
+            </header>
+            
+                <content>
+                    <nav>
+                         <p>Виды спорта:</p>
+                        <ul>
+                            <li><a href="div.html" title="Ссылка">Конькобежный спорт</a></li>
+                            <li><a href="div.html" title="Ссылка">Биатлон</a></li>
+                            <li><a href="div.html" title="Ссылка">Футбол</a></li>
+                            <li><a href="div.html" title="Ссылка">Стрельба из лука</a></li>
+                            <li><a href="div.html" title="Ссылка">Прыжки в длинну</a></li>
+                             <li><a href="div.html" title="Ссылка">Прыжки в высоту</a></li>
+                            <li><a href="div.html" title="Ссылка">Фигурное катание</a></li>
+                        </ul>
+                    </nav>
+                
+                <article>
+                    <h2 style="text-align: center;">Футбол</h2>
+                    <p><img src="ae1.jpg" title="Картинка" alt="Картинка" class="img" style="margin: 4px 25px 20px 10px; float: left;">
+                    Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами 
+                    или другими частями тела (кроме рук), большее колличество раз чем команда соперника.</p>
+                    <p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. </p>
+               </article>
+               </content>
+               <footer>
+                Главное не победа, а участие!
+              </footer>
+        </div>
+    </body>
+</html>

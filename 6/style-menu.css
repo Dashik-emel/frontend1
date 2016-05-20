@@ -1,0 +1,71 @@
+*{  padding: 0;
+	margin: 0;
+}
+
+a{
+	color: green;
+	font-size: 15px;
+}
+
+
+.menu-ul{ 
+	width: 500px;
+	height: 20px;
+ }
+
+.menu-ul li{
+	display: inline;
+	list-style: none;
+	margin-right: 7px;
+	line-height: 20px;
+	
+}
+
+.menu-ul  a{
+	border-right: 2px solid red;
+	display: inline-block;
+	padding: 5px 10px 5px 0;
+	margin-left: 7px;
+	
+}
+ 
+.border a{
+	border: none;
+}
+.menu-ul  a:hover{color: red;}
+
+.menu-div{
+	width: 500px;
+	height: 30px;
+}
+.line_block{
+	float: left;
+	margin: 2px;
+	border-right: 2px solid red; 
+
+}
+.line_block a{
+	line-height: 30px;
+	padding: 5px;
+
+}
+.line_block a:hover{color: red;}
+
+.five {
+	border: none;
+}
+
+.menu-table{
+	border-spacing: 7px 11px;
+	
+}
+
+.menu-table td {
+	border-right: 2px solid red; 
+	padding: 0 5px;
+	margin-right: 5px;
+}
+
+.border-five td {
+	border: none;
+}

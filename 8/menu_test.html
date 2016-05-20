@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Меню</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="menu_test.css">
+		<style>
+			
+			.menu, input{
+				display: none;
+			}
+			
+			input:checked + .menu{
+				display: block;
+			}
+			
+			
+			.menu{
+				position: relative;
+				top: 27px;
+				right: 95px;
+			}
+			.fr{
+				position: relative;
+				top: 29px;
+				right: 95px;
+			}
+			/*если меньше 400 пикселей*/
+				@media screen and (max-width:400px){
+				    ul{
+				        font-size: 1em;
+				        display: block;
+				        height: 2em;
+				       
+				    }
+				     
+					 .menu{
+					 		position: relative;
+							top: -1px;
+							right: 0px;
+					 }   
+					 .fr{
+							position: relative;
+							top: 0px;
+							right: 0px;
+					 }
+					 .mmm{display:none;}
+			}
+			
+				@media screen and (max-width:900px){
+					
+				}
+		</style>
+	</head>
+	<body>
+		<div>
+			
+			<nav>
+                <ul>
+                    <li><a href="#" title="Contact Us">Contact Us</a></li>
+                    <li><a href="#" title="Collection">Collection</a></li>
+                    <li><a href="#" title="About us">About us</a></li>
+                    <li class="mmm"><label for="nnn">...<br></label></li>
+                    <input type="checkbox" id="nnn">
+	                    <div class="menu">
+	                        <li class="fr_t"><a href="#" title="Community">Community</a></li>
+	                        <li class="fr"><a href="#" title="Home">Home</a></li>
+	                    </div>
+                   
+                    
+                </ul>
+            </nav>
+		</div>
+	</body>
+</html>
+
+
+

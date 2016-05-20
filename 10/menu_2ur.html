@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Сайт</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="">
+	<style>
+		a,
+		abbr,
+		acronym,
+		address,
+		applet,
+		b,
+		big,
+		blockquote,
+		body,
+		caption,
+		center,
+		cite,
+		code,
+		dd,
+		del,
+		dfn,
+		div,
+		dl,
+		dt,
+		em,
+		fieldset,
+		font,
+		form,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		html,
+		i,
+		iframe,
+		img,
+		ins,
+		kbd,
+		label,
+		legend,
+		li,
+		object,
+		ol,
+		p,
+		pre,
+		q,
+		s,
+		samp,
+		small,
+		span,
+		strike,
+		strong,
+		sub,
+		sup,
+		table,
+		tbody,
+		td,
+		tfoot,
+		th,
+		thead,
+		tr,
+		tt,
+		u,
+		ul,
+		var {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			font-size: 100%;
+			vertical-align: baseline;
+			background: 0 0
+		}
+		
+		* {
+			box-sizing: border-box;
+		}
+		
+		.clear {
+			clear: both;
+		}
+		
+		body {
+			width: 90%;
+			max-width: 1080px;
+			margin: 0 auto;
+		}
+		
+		nav {
+			margin: 40px auto;
+		}
+		
+		.menu li {
+			float: left;
+			width: 155px;
+			height: 40px;
+			list-style: none;
+			text-align: center;
+			margin-right: 10px;
+			position: relative;
+		}
+		
+		.menu li a,
+		.main {
+			font: 20px Calibri;
+			text-decoration: none;
+			display: block;
+			color: #fff;
+			background: #7bb734;
+			line-height: 40px;
+			background: #7bb734 url(chess.png) 115px -4px repeat-y;
+		}
+		
+		.menu li a:hover {
+			background: #ff6700;
+		}
+		
+		.menu li.parent > ul {
+			position: absolute;
+			display: none;
+			top: 40px;
+			right: -10px;
+		}
+		
+		.menu li.parent:hover > ul {
+			display: block;
+		}
+		
+		.menu li.parent ul.submenu {
+			position: absolute;
+			top: 0px;
+			left: 155px;
+		}
+		
+		.menu li.parent ul.submenu_1 {
+			position: absolute;
+			top: 0px;
+			left: 155px;
+		}
+		
+		.main {
+			display: none;
+		}
+		
+		@media screen and (max-width: 400px) {
+			.menu li {
+				width: 100% !important;
+				height: 100%;
+				margin: 3px auto;
+				clear:both;
+			}
+		}
+		
+		@media screen and (max-width: 1024px) {
+			.menu li {
+				width: 30%;
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<a class="main" href="#">Menu</a>
+		<nav>
+			<ul class="menu">
+				<li><a href="#">Главная</a></li>
+				<li class="parent"><a href="#">О нас</a>
+					<ul>
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Адрес</a></li>
+						<li class="parent"><a href="#">Свзяь</a>
+							<ul class="submenu">
+								<li><a href="#">Наши услуги</a></li>
+								<li><a href="#">Товары</a></li>
+								<li class="parent"><a href="#">Гарантии
+			                            <ul class="submenu_1">
+			                                <li><a href="#">Наши услуги</a></li>
+								<li><a href="#">Товары</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</li>
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Цены</a></li>
+			<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="clear"></div>
+	</div>
+</body>
+
+</html>
